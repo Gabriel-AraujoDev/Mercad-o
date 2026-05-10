@@ -1,6 +1,5 @@
 header {
     width: 100%;
-
     color: #121212;
     background-color: #fff;
 }
@@ -10,12 +9,10 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    padding: 0px 2px;
-
     width: 100%;
+    padding: 0px 10px;
     max-width: 1200px;
-    height: 10vh;
-
+    min-height: 70px;
     margin: 0 auto;
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -52,24 +49,29 @@ header {
     white-space: nowrap;
 }
 
+.search-input::placeholder {
+    color: #888;
+}
+
+.mobile-menu-button {
+    display: none;
+}
+
 /* Mobile */
 
 @media only screen and (max-width: 600px) {
+
     .logo-title {
         display: none;
     }
 
-    /* Pesquisa (input) */
     .search-form {
         display: flex;
         align-items: center;
-        gap: 1px;
 
-        flex-grow: 1;
-        max-width: 400px;
+        flex: 1;
 
-        margin-left: 20px;
-        padding: 6px 12px;
+        margin-left: 10px;
     }
 
     .search-button {
@@ -82,19 +84,40 @@ header {
 
         border: 1px solid #f0f0f0;
         border-right: none;
-        border-radius: 5px 0px 0px 5px;
+        border-radius: 5px 0 0 5px;
+
+        background: #fff;
     }
 
     .search-input {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        min-width: none;;
+        width: 100%;
+        min-width: 0;
         height: 42px;
 
         border: 1px solid #f0f0f0;
         border-left: none;
-        border-radius: 0px 5px 5px 0px;
+        border-radius: 0 5px 5px 0;
+
+        padding: 0 10px;
+    }
+
+    .header__nav-links,
+    .user-text,
+    .nav-icon {
+        display: none;
+    }
+
+    .nav-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .mobile-menu-icon {
+        width: 30px;
+        height: 30px;
     }
 }

@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -17,12 +11,6 @@ a {
 
 ul, ol {
     list-style: none;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 button {
@@ -40,21 +28,4 @@ input, textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-}
-
-.visually-hidden {
-    position: absolute;
-
-    width: 1px;
-    height: 1px;
-
-    padding: 0;
-    margin: -1px;
-
-    overflow: hidden;
-
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-
-    border: 0;
 }

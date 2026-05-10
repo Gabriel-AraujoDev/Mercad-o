@@ -8,6 +8,7 @@
         <meta name="description" content="Mercadão - Seu mercado de confiança">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/global/reset.css">
+        <link rel="stylesheet" href="assets/css/global/global.css">
         <link rel="stylesheet" href="assets/css/layout/header.css">
     </head>
     <body>
@@ -33,13 +34,13 @@
                 </div>
 
                 <div class="header__nav-links" role="navigation" aria-label="Links de navegação principal">
-                    <a class="nav-link" href="pages/category/category.html">
+                    <a class="nav-link disabled-link" href="pages/category/category.html">
                         <img class="nav-icon" src="assets/icons/Categorias.svg" alt="Icone de categoria">
                         Categorias
                         <img class="dropdown-icon" src="assets/icons/Dropdown.svg" alt="icone de dropdown">
                     </a>
 
-                    <a class="nav-link" href="pages/cart/cart.html">
+                    <a class="nav-link disabled-link" href="pages/cart/cart.html">
                         <img class="nav-icon" src="assets/icons/Cart.svg" alt="Icone de carrinho">
                         <span class="cart-count" aria-label="Número de itens no carrinho">0</span>
                     </a>
@@ -47,13 +48,17 @@
 
                 <div class="header__nav-user" role="navigation" aria-label="Área de navegação do usuário">
                     <a class="nav-link" href="pages/login/login.html">
-                        <img class="nav-icon" src="assets/icons/User.svg" alt="Icone de usuário">
+                        <img class="nav-icon" src="assets/icons/Conta.svg" alt="Icone de usuário">
                         <span class="user-text">Entrar</span>
                     </a>
                 </div>
+
+                <button class="mobile-menu-button" aria-label="Menu de navegação móvel">
+                    <img class="mobile-menu-icon" src="assets/icons/Menu.svg" alt="Icone de menu">
+                </button>
             </nav>
         </header>
 
-        <script src="" async defer></script>
+        <script src="assets/js/block-link.js" async defer></script>
     </body>
 </html>
