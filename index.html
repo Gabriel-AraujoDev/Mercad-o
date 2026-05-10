@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mercadão</title>
+        <meta name="description" content="Mercadão - Seu mercado de confiança">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/global/reset.css">
+        <link rel="stylesheet" href="assets/css/layout/header.css">
+    </head>
+    <body>
+        <header>
+            <nav class="header__nav" aria-label="Cabeçalho de navegação principal do Mercadão">
+                <div class="header__nav-logo" aria-label="Logo do Mercadão">
+                    <a class="home-link" href="index.html">
+                        <img class="logo-image" src="assets/images/logo.png" alt="Mercadão Logo">
+                        <span class="logo-title">Mercadão</span>
+                    </a>
+                </div>
+
+                <div class="header__nav-search" role="search" aria-label="Área de pesquisa">
+                    <form class="search-form" action="search.html" method="GET">
+                        <label class="visually-hidden" for="query">Barra de pesquisa</label>
+
+                        <button class="search-button" type="submit">
+                            <img class="search-icon" src="assets/icons/Search.svg" alt="Icone de busca">
+                        </button>
+
+                        <input class="search-input" type="text" name="query" placeholder="Buscar produtos...">
+                    </form>
+                </div>
+
+                <div class="header__nav-links" role="navigation" aria-label="Links de navegação principal">
+                    <a class="nav-link" href="pages/category/category.html">
+                        <img class="nav-icon" src="assets/icons/Categorias.svg" alt="Icone de categoria">
+                        Categorias
+                        <img class="dropdown-icon" src="assets/icons/Dropdown.svg" alt="icone de dropdown">
+                    </a>
+
+                    <a class="nav-link" href="pages/cart/cart.html">
+                        <img class="nav-icon" src="assets/icons/Cart.svg" alt="Icone de carrinho">
+                        <span class="cart-count" aria-label="Número de itens no carrinho">0</span>
+                    </a>
+                </div>
+
+                <div class="header__nav-user" role="navigation" aria-label="Área de navegação do usuário">
+                    <a class="nav-link" href="pages/login/login.html">
+                        <img class="nav-icon" src="assets/icons/User.svg" alt="Icone de usuário">
+                        <span class="user-text">Entrar</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <script src="" async defer></script>
+    </body>
+</html>
