@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap');
 header {
     width: 100%;
     color: #121212;
@@ -10,10 +11,9 @@ header {
     justify-content: space-between;
 
     width: 100%;
-    max-width: 1200px;
     min-height: 70px;
 
-    padding: 0 10px;
+    padding: 0 32px;
     margin: 0 auto;
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -35,19 +35,16 @@ header {
 }
 
 .logo-image {
-    width: clamp(40px, 12vw, 45px);
-    height: auto;
-
+    width: 30px;
+    height: auto;;
     display: block;
-
     padding-bottom: 2px;
-
     object-fit: contain;
 }
 
 .logo-title {
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-family: "Elms Sans", sans-serif;
+    font-optical-sizing: auto;
 
     white-space: nowrap;
 }
@@ -92,7 +89,7 @@ header {
     color: #888;
 }
 
-/* Navigation */
+/* Navegação de links */
 
 .nav-link {
     display: flex;
@@ -108,6 +105,22 @@ header {
 .nav-icon {
     width: 35px;
     height: 35px;
+}
+
+/* Navegação de usuário */
+.user-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-greeting {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.user-action {
+    font-size: 0.8rem;
+    color: #4b4b4b;
 }
 
 /* Mobile menu */
@@ -127,7 +140,12 @@ header {
 /* Mobile */
 
 @media (max-width: 486px) {
-
+    .header__nav {
+        padding: 0 10px;
+    }
+    .logo-image {
+        width: clamp(40px, 12vw, 45px);
+    }
     .logo-title,
     .header__nav-links,
     .header__nav-user,
@@ -143,6 +161,13 @@ header {
 /* Tablet */
 
 @media (min-width: 487px) and (max-width: 599px) {
+    .header__nav {
+        padding: 0 10px;
+    }
+    .logo-image {
+        width: clamp(40px, 12vw, 45px);
+    }
+
     .logo-title {
         display: none;
     }
@@ -151,17 +176,28 @@ header {
         display: none;
     }
 
+    .user-greeting {
+        display: none;
+    }
+
+    .search-input {
+        min-width: 210px;
+    }
+
     .mobile-menu-button {
         display: block;
     }
 }
 
-/* Desktop */
+/* Desktop pequeno*/
 
 @media (min-width: 600px) and (max-width: 800px) {
-
     .logo-image {
         width: 30px;
+    }
+
+    .search-input {
+        min-width: clamp(200px, 30vw, 300px);
     }
 
     .header__nav-links {
