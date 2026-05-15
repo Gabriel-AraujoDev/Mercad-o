@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="assets/css/global/reset.css">
         <link rel="stylesheet" href="assets/css/global/global.css">
         <link rel="stylesheet" href="assets/css/layout/header.css">
+        <link rel="stylesheet" href="assets/css/style/index.css">
     </head>
     <body>
         <header>
@@ -35,20 +36,20 @@
 
                 <div class="header__nav-links" role="navigation" aria-label="Links de navegação principal">
                     <a class="nav-link disabled-link" href="pages/category/category.html">
-                        <img class="nav-icon" src="assets/icons/Categorias.svg" alt="Icone de categoria">
-                        Categorias
+                        <img class="category-icon nav-icon" src="assets/icons/Categorias.svg" alt="Icone de categoria">
+                        <span class="nav-category-text">Categorias</span>
                         <img class="dropdown-icon" src="assets/icons/Dropdown.svg" alt="icone de dropdown">
                     </a>
 
                     <a class="nav-link disabled-link" href="pages/cart/cart.html">
-                        <img class="nav-icon" src="assets/icons/Cart.svg" alt="Icone de carrinho">
+                        <img class="cart-icon nav-icon" src="assets/icons/Cart.svg" alt="Icone de carrinho">
                         <span class="cart-count" aria-label="Número de itens no carrinho">0</span>
                     </a>
                 </div>
 
                 <div class="header__nav-user" role="navigation" aria-label="Área de navegação do usuário">
                     <a class="nav-link" href="pages/login/login.html">
-                        <img class="nav-icon" src="assets/icons/Conta.svg" alt="Icone de usuário">
+                        <img class="account-icon" src="assets/icons/Conta.svg" alt="Icone de usuário">
                         
                         <div class="user-text">
                             <span class="user-greeting">Minha conta</span>
@@ -62,6 +63,43 @@
                 </button>
             </nav>
         </header>
+
+        <main class="home">
+            <section class="featured-products">
+                <div class="featured-products__header">
+                    <div class="featured-products__title-group">
+                        <img src="#" alt="">
+                        <h1 class="featured-products-title">
+                            PRINCIPAIS
+                        </h1>
+                    </div>
+
+                    <div class="featured-products__info">
+                        <p class="featured-products__subtitle">
+                            Os produtos mais vendidos
+                        </p>
+
+                        <a href="#" class="featured-products__link">
+                            Ver mais
+                        </a>
+                    </div>
+                </div>
+
+                <div class="featured-products__list">
+                    <!-- SO EXEMPLO, DEPOIS JS -->
+                    <article class="product-card">
+                        <img class="product-card__image" src="#" alt="Colocar com js">
+                        <h2 class="product-card__title">Mouse Gamer</h2>
+                        <p class="product-card__subtitle">RGB</p>
+                        <span class="product-card__price">R$ 89,90</span>
+                        <button class="product-card__button">
+                            <img class="product-card__button-icon" src="#">
+                            <span clas="product-card__button-text">Comprar</span>
+                        </button>
+                    </article>
+                </div>
+            </section>
+        </main>
 
         <script src="assets/js/block-link.js" async defer></script>
     </body>

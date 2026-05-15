@@ -102,9 +102,22 @@ header {
     align-items: center;
     gap: 20px;
 }
-.nav-icon {
+
+.account-icon {
     width: 35px;
     height: 35px;
+}
+
+.nav-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.nav-category-text {
+    font-family: "Elms Sans", sans-serif;
+    font-optical-sizing: auto;
+
+    white-space: nowrap;
 }
 
 /* Navegação de usuário */
