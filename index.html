@@ -68,34 +68,38 @@
             <section class="featured-products">
                 <div class="featured-products__header">
                     <div class="featured-products__title-group">
-                        <img src="#" alt="">
-                        <h1 class="featured-products-title">
-                            PRINCIPAIS
-                        </h1>
+                        <div class="featured-products__star-group">
+                            <img class="featured-products__star" src="assets/images/Star.png" alt="Estrela decorativa">
+                        </div>
+
+                        <div class="featured-products__title-about">
+                            <h1 class="featured-products__title">
+                                PRINCIPAIS
+                            </h1>
+
+                            <p class="featured-products__subtitle">Os produtos mais vendidos</p>
+                        </div>
                     </div>
 
-                    <div class="featured-products__info">
-                        <p class="featured-products__subtitle">
-                            Os produtos mais vendidos
-                        </p>
-
-                        <a href="#" class="featured-products__link">
-                            Ver mais
-                        </a>
-                    </div>
+                     <a class="featured-products__link" href="#">
+                        <span class="featured-products__link-text">Ver todos</span>
+                        <img class="featured-products__link-image" src="assets/icons/ArrowRight.svg" alt="Seta para a direita">
+                    </a>
                 </div>
 
                 <div class="featured-products__list">
                     <!-- SO EXEMPLO, DEPOIS JS -->
                     <article class="product-card">
-                        <img class="product-card__image" src="#" alt="Colocar com js">
+                        <img class="product-card__image" src="Só-de-exemplo.png" alt="Colocar com js">
                         <h2 class="product-card__title">Mouse Gamer</h2>
                         <p class="product-card__subtitle">RGB</p>
                         <span class="product-card__price">R$ 89,90</span>
-                        <button class="product-card__button">
-                            <img class="product-card__button-icon" src="#">
-                            <span clas="product-card__button-text">Comprar</span>
-                        </button>
+                        <div class="product-card__button-box">
+                            <button class="product-card__button">
+                                <img class="product-card__button-icon" src="assets/icons/CartWhite.svg" alt="Icone de carrinho branco">
+                                <span class="product-card__button-text">Comprar</span>
+                            </button>
+                        </div>
                     </article>
                 </div>
             </section>

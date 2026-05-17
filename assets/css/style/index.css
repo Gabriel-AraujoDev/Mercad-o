@@ -8,17 +8,63 @@
     border-radius: 20px;
 }
 
-.featured-products__title-group {
+.featured-products__header {
     display: flex;
-    align-items: center;
-    margin-bottom: 5px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding: 10px;
 }
 
-.featured-products__info {
+.featured-products__title-group {
     display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.featured-products__title {
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.featured-products__star-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.featured-products__star {
+    display: block;
+    width: 30px;
+    height: auto;
+}
+
+.featured-products__subtitle {
+    font-size: 14px;
+    color: #555;
+}
+
+.featured-products__link {
+    display: flex;
+    align-items: center;
+}
+
+.featured-products__link {
+    display: flex;
+    align-items: center;
     justify-content: space-around;
-    gap: 500px;
-    margin-bottom: 20px;
+    gap: 2px;
+    padding: 10px 10px;
+    background-color: white;
+    border: 1px solid #a0a0a04d;
+    border-radius: 10px;
+}
+
+.featured-products__link-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1b1b1b;
 }
 
 .featured-products__list {
@@ -26,11 +72,17 @@
     align-items: center;
 }
 
+.featured-products__link-image {
+    width: 20px;
+    height: auto;
+}
+
 .product-card {
     display: flex;
     flex-direction: column;
     gap: 5px;
-
+    
+    width: 180px;
     padding: 10px;
     background-color: white;
     border: 1px solid #a0a0a04d;
@@ -38,20 +90,44 @@
 }
 
 .product-card__image {
-    height: 125px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .product-card__price {
-    color: rgb(45, 155, 23);
+    color: rgb(69, 150, 55);
+}
+
+.product-card__button-box {
+    display: flex;
+    justify-content: center;
 }
 
 .product-card__button {
     display: flex;
-    justify-content: space-around;
-
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 100%;
     padding: 10px;
-
     color: white;
-    background-color: rgb(45, 155, 23);
+    background-color: rgb(69, 150, 55);
     border-radius: 5px;
+}
+
+.product-card__button-icon {
+    width: 16px;
+    height: auto;
+}
+
+.product-card__title {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.product-card__subtitle {
+    font-size: 14px;
+    color: #111111;
 }
